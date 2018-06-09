@@ -30,10 +30,9 @@ lib:
 clean:
 	rm -f $(OBJECT)
 	make clean -C libft
-	rm -f "*.swp"
 
 fclean: clean
-	make clean -C libft
+	make fclean -C libft
 	rm -f $(NAME)
 
 re: fclean all

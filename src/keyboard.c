@@ -66,8 +66,6 @@ static void	keyboard_3(int key, t_window *window)
 		window->dgrs.ry += 0.2;
 		draw_image(window);
 	}
-	else if (key == 18)
-		print_help(window);
 }
 
 static void	keyboard_4(int key, t_window *window)
@@ -101,9 +99,12 @@ int			keyboard(int key, void *param)
 	t_window *window;
 
 	window = (t_window *)param;
+	window->clear = 0;
 	keyboard_2(key, window);
 	keyboard_3(key, window);
 	keyboard_4(key, window);
+	if (window->clear)
+		print_help(window);
 	return (0);
 }
 

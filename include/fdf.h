@@ -51,6 +51,7 @@ typedef struct	s_window
 	int			height;
 	t_degree	dgrs;
 	float		zoom;
+	int			clear;
 }				t_window;
 
 typedef struct	s_drawline

@@ -30,6 +30,7 @@ int	main(int ac, char **av)
 	}
 	init(window);
 	draw_image(window);
+	print_help(window);
 	mlx_hook(window->win_ptr, 2, 1L << 0, keyboard, window);
 	mlx_hook(window->win_ptr, 17, 1L << 17, exit_x, 0);
 	mlx_loop(window->mlx_ptr);

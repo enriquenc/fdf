@@ -16,6 +16,7 @@ void	clear(t_window *window)
 {
 	mlx_clear_window(window->mlx_ptr, window->win_ptr);
 	ft_bzero(window->img_data_addr, WIDTH * HEIGHT * 4);
+	window->clear = 1;
 }
 
 void	print_help(t_window *window)
@@ -30,8 +31,6 @@ void	print_help(t_window *window)
 		0, 60, 0xe08600, "3) Page-up and Page-down for zoom.");
 	mlx_string_put(window->mlx_ptr, window->win_ptr,
 		0, 80, 0xe08600, "@tmaslyan's project fdf.");
-	mlx_string_put(window->mlx_ptr, window->win_ptr,
-		0, 100, 0xe08600, "P.S. press 1 to open this prompt.");
 }
 
 void	to_free(char **to_free, int size)
