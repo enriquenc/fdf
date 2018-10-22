@@ -14,7 +14,7 @@ with events linked to this window: keyboard and mouse. This project introduces m
 
 
 ![ScreenShot](https://i.imgur.com/ETvGRcJ.png)
-![ScreenShot](https://i.imgur.com/Q2Abm1x.png
+![ScreenShot](https://i.imgur.com/Q2Abm1x.png)
 ![ScreenShot](https://i.imgur.com/y96T69k.png)
 ![ScreenShot](https://i.imgur.com/j0WwwT2.png)
 
